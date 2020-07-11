@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<!--     HEAD -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, viewport-fit=cover">
+    <title>Smile School - Courses</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- BODY -->
+<body> class="container-fluid p-0 m-0 courses">
+    <header class="container-fluid text-center">
+        <nav class="navbar navbar-default row justify-content-space-between mt-3 mb-5">
+
+            <div class="navbar-header col-sm-3">
+                <a class="navbar-brand text-white font-weight-bold" href="#"><img class="logo" src="images/smile_off.png"/><img class="logo ml-2" src="images/logo.png"/></a>
+            </div>
+            <div class="col-sm-5">
+                <ul class="nav row unstyled justify-content-space-between">
+                    <li class="col-sm-3 ml-1 mr-1"><a href="#" class="text-white text-center">COURSES</a></li>
+                    <li class="col-sm-3 ml-1 mr-1"><a href="#" class="text-white text-center">PRICING</a></li>
+                    <li class="col-sm-3 ml-1 mr-1"><a href="#" class="text-white text-center">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="p-0 m-0">
+        <section id="hero-section" class="col-12 text-center p-5 text-white">
+            <div>
+                <h1 class="font-weight-bold coiny-heading">« Don't cry because it's over.<br/><span class="coiny-heading lavender">Smile</span> because it happened. »</h1>
+            </div>
+        </section>
+        <section id="searchbar-section" class="text-white bg-lavender pt-5 px-5 pb-3">
+            <div>
+                <div class="row justify-content-center align-items-start">
+                    <div class="col-sm-12 col-md-4 mt-3">
+                        <p>KEYWORDS</p>
+                        <div class="search-widget border-bottom mt-0 mb-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button id="search-button" type="submit" class="btn btn-link text-white"><span class="search-icon"></span></button>
+                                </div>
+                                <input type="search" placeholder="Search by keywords" aria-describedby="search-button" class="form-control border-0 search-widget text-muted">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-3">
+                        <p>TOPIC</p>
+                        <div class="search-widget border-bottom mt-0 mb-4">
+                            <select class="custom-select search-widget text-white border-0" id="sel1">
+                                <option>All</option>
+                                <option>Novice</option>
+                                <option>Intermediate</option>
+                                <option>Expert</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-3">
+                        <p>SORT BY</p>
+                        <div class="search-widget border-bottom mt-0 mb-4">
+                            <select class="custom-select search-widget text-white border-0" id="sel1">
+                                <option>Most popular</option>
+                                <option>Most recent</option>
+                                <option>Most viewed</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="searchresults-section" class="text-left p-5 bg-white">
+
+            <p class="mx-2 text-secondary">11 results found</p>
+
+            <div class="row">
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_4.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Inverted Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_3.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Sad Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_1.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Natural Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_2.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Happy Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_4.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Inverted Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_3.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Sad Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_1.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Natural Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_2.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Happy Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_4.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Inverted Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_3.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Sad Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm m-2">
+                    <div class="video-card card text-left">
+                        <img class="card-img-top" src="images/thumbnail_1.jpg" alt="Card image">
+                        <div class="card-body text-black">
+                            <h3 class="card-title font-weight-bold text-black">Natural Smile</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="circle-thumb-small rounded-circle" src="images/profile_1.jpg"/>
+                                <p class="lavender m-3">Phillip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-space-between">
+                                <div class="d-flex justify-content-space-between mr-auto">
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_on.png"/>
+                                    <img class="star m-1" src="images/star_off.png"/>
+                                </div>
+                                <div>
+                                    <p class="lavender text-right">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </body>
+</html>
