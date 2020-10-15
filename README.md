@@ -29,7 +29,7 @@
 
 ### [5. Latest videos](./4-homepage.html)
 
-### [6. ... anD the footer!](./homepage.html)
+### [6. ... and the footer!](./homepage.html)
 
 ### [7. Pricing - header](./0-pricing.html)
 
